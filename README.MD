@@ -1,4 +1,4 @@
-# WebAssembly vs JavaScript
+# Rust WebAssembly vs JavaScript
 
 A tool for compare and contrast the performance of algorithms in Rust WASM and JS languages.
 
@@ -19,7 +19,8 @@ at your option.
 
 ## Getting Started
 
-Following is the setup to run the benchmark tool.
+Following is the setup to run the benchmark tool.<br>
+You will need to run these steps with **administrator privileges**.
 
 ### Dependencies
 
@@ -40,7 +41,7 @@ rustc --version
 
 ### Installing
 
-These steps setup cargo and wasm tools. They are available at:  
+These steps setup cargo and WASM tools. They are available at:  
 `https://rustwasm.github.io/docs/book/game-of-life/setup.html`
 
 1. Install wasm-pack for building, testing, and publishing Rust-generated WebAssembly:  
@@ -55,7 +56,7 @@ These steps setup cargo and wasm tools. They are available at:
     ```
 1. Inside `rustComparisons\www` folder execute:
     ```
-    npm install
+    npm ci
     ```
 
 ### Executing program in Development Mode
