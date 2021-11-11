@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WebAssembly vs JavaScript</title>
+  <link rel="stylesheet" href="static/css/form.css">
+  <link rel="stylesheet" href="static/css/loading.css">
+  <script>
+    // Does this browser support performance memory API?
+    if (!performance.memory) {
+      console.warn('performance.memory is only available in Chrome.');
+      performance.memory = {};
+    }
+  </script>
+</head> 
+
+<body>
+  <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+  <script src="./bootstrap.js"></script> 
+  <div id="loading">
+    <div id="ld-content">
+      <img id="loading-image" src="static/images/loading.gif" alt="Loading..." />
+      <p>Open console to check results</p>
+    </div>
+  </div>
+  <div class="testbox">
+    <form action="/" method="GET">
+      <div class="banner">
+        <h1>WebAssembly vs JavaScript</h1>
+      </div>
+      <br/>
+      <div class="question">
+        <label>Algorithm:</label>
+        <div class="question-answer">
+          <input type="radio" value="mergesort" id="alg_mergesort" name="algName" required/>
+          <label for="alg_mergesort" class="radio"><span>Merge Sort</span></label>
+          <input type="radio" value="binarysearch" id="alg_binarysearch" name="algName"/>
+          <label for="alg_binarysearch" class="radio"><span>Binary Search</span></label>
+          <input type="radio" value="primes" id="alg_primes" name="algName"/>
+          <label for="alg_primes" class="radio"><span>Primes</span></label>
+          <input type="radio" value="fibonacci" id="alg_fibonacci" name="algName"/>
+          <label for="alg_fibonacci" class="radio"><span>Fibonacci</span></label>
+        </div>
+      </div>
+      <div class="question">
+        <label>Type:</label>
+        <div class="question-answer">
+          <input type="radio" value="wa" id="type_wa" name="algType" required/>
+          <label for="type_wa" class="radio"><span>WebAssembly</span></label>
+          <input type="radio" value="js" id="type_js" name="algType"/>
+          <label for="type_js" class="radio"><span>JavaScript</span></label>
+      </div>
+      <div class="btn-block">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

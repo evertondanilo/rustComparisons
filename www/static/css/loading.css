@@ -1,0 +1,21 @@
+  #loading {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color: #fff;
+    z-index: 99;
+  }
+
+  #ld-content {
+    text-align: center;
+  }
+
+  #loading-image {
+    z-index: 100;
+  }
