@@ -103,3 +103,7 @@ wasm-pack build; $env:rust_test_mode='1'; cargo test;
 ```
 npm test
 ```
+### Points of interest
+- [Rust Algorithms](https://github.com/evertondanilo/rustComparisons/blob/main/src/lib.rs)
+- [JavaScript Algorithms](https://github.com/evertondanilo/rustComparisons/blob/main/www/src/jsLib.js)
+- [Runner.js](https://github.com/evertondanilo/rustComparisons/blob/main/www/src/runner.js)
